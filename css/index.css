@@ -267,7 +267,7 @@ header .header-links a:hover {
   font-weight: 300;
   line-height: 1.5;
   color: #121212;
-  padding: 40px 0;
+  margin: 40px 0;
 }
 @media (max-width: 1440px) {
   .main-section .main-description {
@@ -285,24 +285,50 @@ header .header-links a:hover {
     line-height: 1.8;
   }
 }
-.main-section .main-cta {
+.main-section .cta-section {
+  display: inline-block;
+  height: auto;
+}
+.main-section .cta-section .main-cta {
   background-color: #1DB954;
-  padding: 2.5%;
+  padding: 2%;
   border-radius: 500px;
   width: fit-content;
   font-size: 2rem;
   color: white;
   font-weight: 500;
   border: 2px solid #1DB954;
+  margin-right: 16px;
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .main-section .main-cta {
+  .main-section .cta-section .main-cta {
     align-self: center;
     padding: 5%;
   }
 }
-.main-section .main-cta:hover {
+.main-section .cta-section .main-cta:hover {
+  border: 2px solid #1DB954;
+  color: #1DB954;
+  background-color: white;
+}
+.main-section .cta-section .secondary-cta {
+  padding: 2%;
+  border-radius: 500px;
+  width: fit-content;
+  font-size: 2rem;
+  color: #212121;
+  font-weight: 500;
+  border: 2px solid #212121;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .main-section .cta-section .secondary-cta {
+    align-self: center;
+    padding: 5%;
+  }
+}
+.main-section .cta-section .secondary-cta:hover {
   border: 2px solid #1DB954;
   color: #1DB954;
   background-color: white;
