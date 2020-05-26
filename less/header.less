@@ -1,13 +1,21 @@
 header{
     background-color: @mainBlack;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     
-    padding: .5%;
+    padding: 1% 5%;
 
     .header-logo{
         width:7%;
+
+        @media @medium{
+           width:10%;
+        }
+
+        @media @mobil{
+            width:20%
+        }
     }
 
     .header-links{
@@ -15,11 +23,24 @@ header{
         display: flex;
         justify-content: space-around;
 
+        @media @medium{
+           width:40%
+        }
+
+        @media @mobil{
+           width: 70%;
+        }
+        
+
         a{
             color: white;
             font-size: 1.6rem;
             font-weight: 700;
             text-transform: capitalize;
+
+            @media @mobil{
+                font-size: 1.2rem;
+            }
             
             &:hover{
                 color: @mainColor;
