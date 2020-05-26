@@ -1,0 +1,29 @@
+header{
+    background-color: @mainBlack;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: .5%;
+
+    .header-logo{
+        width:7%;
+    }
+
+    .header-links{
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+
+        a{
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            
+            &:hover{
+                color: @mainColor;
+            }
+        }
+    }
+}
