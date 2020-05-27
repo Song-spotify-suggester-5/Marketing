@@ -1,0 +1,136 @@
+
+.main{
+    display: flex;
+
+    @media @mobil{
+        flex-direction: column-reverse;
+    }
+}
+
+
+.main-section{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    width:55%;
+
+    @media @mobil{
+        width: 100%;
+        padding: 0 5%;
+        height: auto;
+        margin-bottom: 36px;
+    }
+
+    .main-title{
+        font-size: 9rem;
+        line-height: 1.2;
+
+        @media @large{
+           font-size: 7rem;
+        }
+
+        @media @medium{
+            font-size: 5rem;
+        }
+
+        @media @mobil{
+           font-size: 4.8rem;
+    
+        }
+    }
+
+    .main-description{
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.5;
+        color: @mainBlack;
+        margin: 40px 0;
+
+        @media @large{
+           font-size: 2.6rem;
+        }
+
+        @media @medium{
+           font-size: 2.2rem;
+        }
+
+        @media @mobil{
+           font-size: 2rem;
+           line-height: 1.8;
+        }
+    }
+
+    .cta-section{
+        display: inline-block;
+        margin-top: 26px;
+        .main-cta{
+            background-color: @mainColor;
+            padding: 2%;
+            border-radius: 500px;
+            width: fit-content;
+            font-size: 2rem;
+            color: white;
+            font-weight: 500;
+            border: 2px solid @mainColor;
+            margin-right: 16px;
+            cursor: pointer;
+            @media @mobil{
+             align-self: center;
+             padding: 5%;  
+            }
+            
+    
+            &:hover{
+                border: 2px solid @mainColor;
+                color: @mainColor;
+                background-color: white;
+            }
+        }
+
+        .secondary-cta{
+            padding: 2%;
+            border-radius: 500px;
+            width: fit-content;
+            font-size: 2rem;
+            color: @mainColorDark;
+            font-weight: 500;
+            border: 2px solid @mainColorDark;
+            cursor: pointer;
+            @media @mobil{
+             align-self: center;
+             padding: 5%;  
+            }
+            
+    
+            &:hover{
+                border: 2px solid @mainColor;
+                color: @mainColor;
+                background-color: white;
+            }
+        }
+    }
+    
+
+}
+
+.main-section-mockup{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @mobil{
+        width: 100%;
+    }
+
+    img{
+        padding: 3%;
+        @media @mobil{
+         padding: 1%;  
+        }
+    }
+}
+
+
