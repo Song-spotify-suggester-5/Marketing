@@ -37,7 +37,6 @@
 
         @media @mobil{
            font-size: 4.8rem;
-    
         }
     }
 
@@ -65,20 +64,32 @@
     .cta-section{
         display: inline-block;
         margin-top: 26px;
+
+        @media @mobil {
+            display: flex;
+            flex-direction: column;
+        }
+        
         .main-cta{
+            display: inline-block;
             background-color: @mainColor;
             padding: 2%;
+            width: 210px;
+            text-align: center;
             border-radius: 500px;
-            width: fit-content;
             font-size: 2rem;
-            color: white;
+            color:white;
             font-weight: 500;
             border: 2px solid @mainColor;
             margin-right: 16px;
             cursor: pointer;
+
+            @media @tablet{
+                margin-bottom: 16px;
+                margin-right: 0;
+            }
             @media @mobil{
              align-self: center;
-             padding: 5%;  
             }
             
     
@@ -90,17 +101,18 @@
         }
 
         .secondary-cta{
+            display: inline-block;
+            width: 210px;
+            text-align: center;
             padding: 2%;
             border-radius: 500px;
-            width: fit-content;
             font-size: 2rem;
             color: @mainColorDark;
             font-weight: 500;
             border: 2px solid @mainColorDark;
             cursor: pointer;
             @media @mobil{
-             align-self: center;
-             padding: 5%;  
+             align-self: center; 
             }
             
     

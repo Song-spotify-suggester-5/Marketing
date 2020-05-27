@@ -289,11 +289,19 @@ header .header-links a:hover {
   display: inline-block;
   margin-top: 26px;
 }
+@media (max-width: 500px) {
+  .main-section .cta-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .main-section .cta-section .main-cta {
+  display: inline-block;
   background-color: #1DB954;
   padding: 2%;
+  width: 210px;
+  text-align: center;
   border-radius: 500px;
-  width: fit-content;
   font-size: 2rem;
   color: white;
   font-weight: 500;
@@ -301,10 +309,15 @@ header .header-links a:hover {
   margin-right: 16px;
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .main-section .cta-section .main-cta {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+}
 @media (max-width: 500px) {
   .main-section .cta-section .main-cta {
     align-self: center;
-    padding: 5%;
   }
 }
 .main-section .cta-section .main-cta:hover {
@@ -313,9 +326,11 @@ header .header-links a:hover {
   background-color: white;
 }
 .main-section .cta-section .secondary-cta {
+  display: inline-block;
+  width: 210px;
+  text-align: center;
   padding: 2%;
   border-radius: 500px;
-  width: fit-content;
   font-size: 2rem;
   color: #212121;
   font-weight: 500;
@@ -325,7 +340,6 @@ header .header-links a:hover {
 @media (max-width: 500px) {
   .main-section .cta-section .secondary-cta {
     align-self: center;
-    padding: 5%;
   }
 }
 .main-section .cta-section .secondary-cta:hover {
@@ -491,7 +505,7 @@ header .header-links a:hover {
 }
 @media (max-width: 500px) {
   .footer {
-    display: none;
+    justify-content: center;
   }
 }
 .footer p {
