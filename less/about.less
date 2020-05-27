@@ -3,37 +3,63 @@
     padding: 8% 8% 5%;
     justify-content: space-around;
 
+    @media @mobil {
+        flex-direction: column-reverse;
+    }
+
     p{
         width: 30%;
         font-size: 1.6rem; 
         line-height: 1.5;
         font-weight: 300;
+
+        @media @mobil {
+            width: 100%;
+            padding: 5% 0;
+        }
     }
     h1{
         font-size: 4.2rem;
         width: 50%;
-        line-height: 1.5;
-        
+        line-height: 1.5; 
+
+        @media @mobil {
+            width: 100%;
+            font-size: 3.6rem;
+            line-height: 1.2;
+        }
     }
 }
 
 .card{
-    padding: 0 8% 5%;
-}
+    width:80%;
+    padding: 0 2% 5%;
+    margin: 0 auto;
 
+    @media @mobil {
+        width: 90%;
+    }
+}
 .one{
     position: relative;
     left: 40px;
+
+    @media @mobil {
+        left: 0;
+    }
 }
 
 .two{
     position: relative;
     right: 40px;
+
+    @media @mobil {
+        right: 0;
+    }
 }
 
 
 .content-container{
-    margin: 0 5%;
     // background-color: @mainColorDark;
     border: 3px solid @mainBlack;
     display: flex;
@@ -43,21 +69,45 @@
     height: 400px;
     position: relative;
     box-shadow: 2px 3px 4px 3px (rgba(0, 0, 0, .9));
+    @media @medium {
+        height: 360px;
+    }
+
+    @media @mobil {
+        height: 300px;
+    }
 
     .content-img{
         width: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media @tablet {
+            width: 50%;
+        }
+
+        @media @mobil {
+            display: none;
+        }
+
         img{
             width:40%;
             position: relative;
             right: 40px;
+
+            
         }
     }
 
     .content{
         width: 30%;
+        @media @tablet {
+            width: 40%;
+        }
+        @media @mobil {
+            width: 100%;
+        }
+
         h2{
             color: @mainColor;
             font-size: 2.5rem;
