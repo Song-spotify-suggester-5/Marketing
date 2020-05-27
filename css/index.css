@@ -352,6 +352,74 @@ header .header-links a:hover {
     padding: 1%;
   }
 }
+.top {
+  display: flex;
+  padding: 8% 8% 5%;
+  justify-content: space-around;
+}
+.top p {
+  width: 30%;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.top h1 {
+  font-size: 4.2rem;
+  width: 50%;
+  line-height: 1.5;
+}
+.card {
+  padding: 0 8% 5%;
+}
+.one {
+  position: relative;
+  left: 40px;
+}
+.two {
+  position: relative;
+  right: 40px;
+}
+.content-container {
+  margin: 0 5%;
+  border: 3px solid #121212;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+  height: 400px;
+  position: relative;
+  box-shadow: 2px 3px 4px 3px rgba(0, 0, 0, 0.9);
+}
+.content-container .content-img {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-container .content-img img {
+  width: 40%;
+  position: relative;
+  right: 40px;
+}
+.content-container .content {
+  width: 30%;
+}
+.content-container .content h2 {
+  color: #1DB954;
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+.content-container .content p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.content-container h5 {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
 .footer {
   display: flex;
   justify-content: flex-end;
