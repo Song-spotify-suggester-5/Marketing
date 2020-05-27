@@ -287,7 +287,7 @@ header .header-links a:hover {
 }
 .main-section .cta-section {
   display: inline-block;
-  height: auto;
+  margin-top: 26px;
 }
 .main-section .cta-section .main-cta {
   background-color: #1DB954;
