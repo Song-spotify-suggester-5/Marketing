@@ -1,0 +1,153 @@
+
+.main-team{
+    display: flex;
+    align-items: center;
+    height: 85vh;
+
+    @media @tablet{
+      height: 100%;
+      flex-direction: column-reverse;
+    }
+
+    @media @mobil {
+      margin-bottom: 16px;
+    }
+    
+}
+
+.main-section-team{
+    width: 55%;
+    margin: 5% 10%; 
+    .flex-column();
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 60vh;
+
+    @media @large {
+      margin: 5%;
+      height: 60vh;
+    }
+
+    @media @medium {
+      height: 50vh;
+    }
+
+    @media @tablet{
+      height:42vh;
+      margin: 0 auto;
+      width:80%;
+    }
+    @media @mobil{
+      height:100%;
+      
+    }
+
+    
+
+    .team-member{
+        margin: 3% 0;
+        width: fit-content;
+        h2{
+            font-size:3.5rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            @media @large {
+              font-size: 3rem;
+            }
+
+            @media @medium {
+              font-size: 2.8rem;
+            }
+            @media @tablet {
+              font-size: 2.2rem;
+            }
+        }
+
+        p{
+            font-size: 1.8rem;
+            font-weight: 300;
+            text-transform: capitalize;
+            @media @tablet {
+              font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.team-images{
+    width: 45%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    @media @tablet {
+      width: 100%;
+    }
+}
+
+
+
+.image-section{
+    overflow: hidden;
+    margin: 4% 5%;
+    @media @tablet {
+      margin: 2% 0;
+    }
+
+
+    .image-slider{
+        display: flex;
+    
+        img{
+            margin: 0 1%;
+            width: 256px;
+            height: 280px;
+
+            @media @medium{
+              width: 200px;
+              height: 230px;
+              object-fit: cover;
+            }
+            @media @tablet{
+              width: 150px;
+              height: 180px;
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+@keyframes scroll {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(-108rem, 0, 0);
+    }
+  }
+  
+  .scroll-left {
+    animation: scroll 18s linear infinite;
+  }
+  
+  @keyframes scroll-reverse {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(-108rem, 0, 0);
+    }
+  }
+  
+  .scroll-right {
+    animation: scroll-reverse 18s linear infinite reverse;
+  }
+  
