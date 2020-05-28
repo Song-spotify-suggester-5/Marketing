@@ -195,9 +195,19 @@ header .header-links {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 1440px) {
+  header .header-links {
+    width: 30%;
+  }
+}
 @media (max-width: 1024px) {
   header .header-links {
     width: 40%;
+  }
+}
+@media (max-width: 800px) {
+  header .header-links {
+    width: 60%;
   }
 }
 @media (max-width: 500px) {
@@ -500,11 +510,18 @@ header .header-links a:hover {
 }
 .main-team {
   display: flex;
-  height: 80vh;
+  align-items: center;
+  height: 85vh;
+}
+@media (max-width: 800px) {
+  .main-team {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 500px) {
   .main-team {
-    flex-direction: column-reverse;
+    margin-bottom: 16px;
   }
 }
 .main-section-team {
@@ -514,19 +531,64 @@ header .header-links a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  height: 60vh;
+}
+@media (max-width: 1440px) {
+  .main-section-team {
+    margin: 5%;
+    height: 60vh;
+  }
+}
+@media (max-width: 1024px) {
+  .main-section-team {
+    height: 50vh;
+  }
+}
+@media (max-width: 800px) {
+  .main-section-team {
+    height: 42vh;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .main-section-team {
+    height: 100%;
+  }
 }
 .main-section-team .team-member {
   margin: 3% 0;
+  width: fit-content;
 }
 .main-section-team .team-member h2 {
   font-size: 3.5rem;
   font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1440px) {
+  .main-section-team .team-member h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .main-section-team .team-member h2 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .main-section-team .team-member h2 {
+    font-size: 2.2rem;
+  }
 }
 .main-section-team .team-member p {
   font-size: 1.8rem;
   font-weight: 300;
   text-transform: capitalize;
+}
+@media (max-width: 800px) {
+  .main-section-team .team-member p {
+    font-size: 1.2rem;
+  }
 }
 .team-images {
   width: 45%;
@@ -534,9 +596,19 @@ header .header-links a:hover {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .team-images {
+    width: 100%;
+  }
+}
 .image-section {
   overflow: hidden;
   margin: 4% 5%;
+}
+@media (max-width: 800px) {
+  .image-section {
+    margin: 2% 0;
+  }
 }
 .image-section .image-slider {
   display: flex;
@@ -545,6 +617,19 @@ header .header-links a:hover {
   margin: 0 1%;
   width: 256px;
   height: 280px;
+}
+@media (max-width: 1024px) {
+  .image-section .image-slider img {
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 800px) {
+  .image-section .image-slider img {
+    width: 150px;
+    height: 180px;
+  }
 }
 @keyframes scroll {
   0% {
