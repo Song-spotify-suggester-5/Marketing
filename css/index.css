@@ -389,7 +389,7 @@ header .header-links a:hover {
 .top p {
   width: 30%;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.8;
   font-weight: 300;
 }
 @media (max-width: 500px) {
